@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kson.eventdemo.ParentViewOuter
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left"
+        android:background="#ff0000">
+
+        <com.kson.eventdemo.HorizontalViewOuter
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#0000ff" />
+
+    </com.kson.eventdemo.ParentViewOuter>
+
+    <com.kson.eventdemo.ParentViewInner
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="right"
+        android:background="#00ff00">
+
+        <com.kson.eventdemo.HorizontalViewInner
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#0000ff" />
+
+        <com.kson.eventdemo.VerticalViewInner
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:background="#ffff00" />
+
+    </com.kson.eventdemo.ParentViewInner>
+
+</LinearLayout>
